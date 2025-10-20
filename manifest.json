@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "The Assistant",
+  "version": "1.0",
+  "description": "SSend headlines to GMail and query Llama from your toolbar.",
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "identity"
+  ],
+  "host_permissions": [
+    "https://api-inference.huggingface.co/*"
+  ],
+  "oauth2": {
+    "client_id": "806278376093-cn692m28qf3uv5esn9bdimil9at25hu4.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.send"
+    ]
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_script.js"]
+    }
+  ]
+}

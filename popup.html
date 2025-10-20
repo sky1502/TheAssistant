@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: sans-serif; width: 300px; padding: 10px; }
+    textarea { width: 100%; height: 60px; }
+    button { width: 100%; margin-top: 5px; }
+    #output { white-space: pre-wrap; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <body>
+  <h4>1. Email Headlines</h4>
+  <button id="email">Email Headlines</button>
+  <hr>
+</body>
+
+
+  <hr>
+
+  <h4>2. Get Prompting</h4>
+  <textarea id="prompt" placeholder="Enter your prompt…"></textarea>
+  <button id="ask">Ask Your LLM</button>
+  <div id="output"></div>
+  
+  <hr>
+
+  <h4>Settings</h4>
+  <input type="password" id="apikey" placeholder="HuggingFace API Token"/>
+  <button id="saveKey">Save Key</button>
+</body>
+<script src="env.js"></script>
+<script src="popup.js"></script>
+</html>
