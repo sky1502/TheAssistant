@@ -110,12 +110,4 @@ When testing, add your Google account as a test user on the OAuth consent screen
 
 ---
 
-## Security Notes
-- Delete the sample `Keys` file and the bundled `client_secret_*.json` once you create your own credentials.
-- If you check this project into source control, add `.gitignore` entries for `env.js`, `Keys`, and `client_secret_*.json`, and provide template files instead.
-- Consider encrypting or otherwise protecting API keys when redistributing the extension.
-
----
-
 ## License
-Add your preferred license (e.g., MIT, Apache 2.0) before publishing or sharing the repository.
